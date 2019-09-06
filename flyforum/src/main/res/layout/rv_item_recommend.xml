@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23px"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <!--头像-->
+    <ImageView
+        android:id="@+id/recommend_icon"
+        android:layout_width="58px"
+        android:layout_height="58px"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="37px" />
+
+    <!--昵称-->
+    <TextView
+        android:id="@+id/recommend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26px"
+        android:layout_marginTop="45px"
+        android:layout_toRightOf="@id/recommend_icon"
+        android:textColor="@color/colorWhite"
+        android:textSize="30px" />
+
+    <!--内容-->
+    <TextView
+        android:id="@+id/recommend_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_icon"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="24px"
+        android:textColor="@color/colorWhite"
+        android:textSize="24px" />
+
+    <!--详情内容-->
+
+    <cn.flyaudio.flyforum.view.PictureView
+        android:visibility="gone"
+        android:id="@+id/recommend_picture"
+        android:layout_width="match_parent"
+        android:layout_height="216px"
+        android:layout_below="@id/recommend_content"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="28px"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal">
+
+
+    </cn.flyaudio.flyforum.view.PictureView>
+
+
+    <!--发表时间-->
+    <TextView
+        android:id="@+id/recommend_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_picture"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="31px"
+        android:textColor="#dddede"
+        android:textSize="20px" />
+
+    <!--定位图标-->
+    <ImageView
+        android:id="@+id/recommend_local_icon"
+        android:layout_width="27px"
+        android:layout_height="20px"
+        android:layout_below="@id/recommend_picture"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="26px"
+        android:layout_toRightOf="@id/recommend_time"
+        android:background="@mipmap/flyforum_local"
+        android:visibility="visible" />
+
+    <!--定位-->
+    <TextView
+        android:id="@+id/recommend_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_picture"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/recommend_local_icon"
+        android:textColor="@color/colorWhite"
+        android:textSize="20px"
+        android:visibility="gone" />
+
+    <!--阅读数量-->
+    <TextView
+        android:id="@+id/recommend_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/recommend_picture"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="31px"
+        android:textColor="#dddede"
+        android:textSize="20px" />
+
+    <!--阅读图标-->
+    <ImageView
+        android:id="@+id/recommend_read_icon"
+        android:layout_width="22px"
+        android:layout_height="22px"
+        android:layout_marginRight="10px"
+        android:layout_toLeftOf="@id/recommend_read"
+        android:layout_marginTop="34px"
+        android:layout_below="@id/recommend_picture"
+        android:background="@mipmap/flyforum_eye"/>
+
+    <!--分割线-->
+    <View
+        android:layout_width="888px"
+        android:layout_height="2px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_below="@id/recommend_read"
+        android:background="@mipmap/flyforum_line"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':flycodelibrary', ':jcvideoplayer', ':flyforum', ':flycarinfo', ':flysdk_lib'

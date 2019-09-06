@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/flyforum_bg_new"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_30"
+    android:paddingRight="@dimen/px_30">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47px"
+        android:text="@string/imformation"
+        android:textColor="@color/colorWhite"
+        android:textSize="48px" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/informationRefesh"
+        android:layout_below="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_nonet"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="17sp"-->
+                <!--android:visibility="gone"-->
+                <!--android:text="@string/errortips"-->
+                <!--/>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/flyforum_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/tv_info"
+        android:background="@color/colorrg"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:text="@string/errortips"
+        android:visibility="gone" />
+</RelativeLayout>

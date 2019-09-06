@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/flyforum_bg_new"
+    android:paddingLeft="@dimen/px_34px"
+    android:paddingRight="@dimen/px_34px"
+    >
+
+    <TextView
+        android:id="@+id/tv_acs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_48px"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="47px"
+        android:text="活动"
+        />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/campaignRefesh"
+        android:layout_below="@+id/tv_acs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_acs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/tv_acs"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:background="@color/colorrg"
+        android:visibility="gone"
+        android:text="@string/errortips"
+        />
+</RelativeLayout>

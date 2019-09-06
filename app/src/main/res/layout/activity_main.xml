@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.flyaudio.flyaudiolauncher.view.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--主页布局-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_amap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.amap.api.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.amap.api.maps.MapView>
+        </LinearLayout>
+
+        <cn.flyaudio.flyaudiolauncher.view.FlyLauncherWidgetView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--顶部时间天气-->
+            <LinearLayout
+                android:layout_marginTop="52px"
+                android:id="@+id/ll_time_weather"
+                android:layout_width="1080px"
+                android:layout_height="210px"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true">
+            </LinearLayout>
+
+            <!--发起导航图标-->
+            <Button
+                android:id="@+id/bt_start_navi"
+                android:layout_marginTop="5px"
+                android:layout_below="@id/ll_time_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起&#10;导航"
+                android:visibility="gone"/>
+
+            <!--结束导航-->
+            <Button
+                android:id="@+id/bt_stop_navi"
+                android:layout_marginTop="5px"
+                android:layout_below="@id/bt_start_navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束&#10;导航"
+                android:visibility="gone"/>
+
+            <!--模拟导航图标-->
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_simulat_navi"
+                android:layout_marginTop="10px"
+                android:layout_below="@id/ll_time_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="模拟&#10;导航"
+                android:visibility="gone"/>
+
+            <!--媒体插件-->
+            <RelativeLayout
+                android:id="@+id/appwidget_audio"
+                android:layout_alignParentBottom="true"
+                android:layout_width="540px"
+                android:layout_height="400px"/>
+
+            <!--蓝牙插件-->
+            <RelativeLayout
+                android:layout_toRightOf="@id/appwidget_audio"
+                android:id="@+id/appwidget_bluetooth"
+                android:layout_alignParentBottom="true"
+                android:layout_width="540px"
+                android:layout_height="400px"/>
+
+        </cn.flyaudio.flyaudiolauncher.view.FlyLauncherWidgetView>
+    </FrameLayout>
+
+
+    <!--左侧车辆控制页面-->
+    <fragment
+        android:name="cn.flyaudio.leftfragment.LeftFragment"
+        android:id="@+id/fg_carinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-65dp"
+        android:layout_gravity="start"
+        android:tag="LEFT"
+        tools:layout="@layout/left_fragment" />
+
+    <!--右页飞歌联盟页面-->
+    <fragment
+        android:id="@+id/fg_flyunion"
+        android:name="cn.flyaudio.flyaudiolauncher.fragments.FlyUnionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-65dp"
+        android:layout_gravity="end"
+        android:tag="RIGHT"
+        tools:layout="@layout/fragment_main" />
+
+</cn.flyaudio.flyaudiolauncher.view.DrawerLayout>

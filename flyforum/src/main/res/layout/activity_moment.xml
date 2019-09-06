@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/flyforum_bg_new"
+    android:paddingLeft="@dimen/dp_30px"
+    android:paddingRight="@dimen/dp_30px"
+    android:paddingTop="47px">
+
+    <TextView
+        android:id="@+id/tv_moment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moment"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dp_48px" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/momentRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_moment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_momentlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_30"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>>
+
+    <TextView
+        android:id="@+id/tv_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_moment"
+        android:background="@color/colorrg"
+        android:gravity="center"
+        android:text="@string/errortips"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:visibility="gone" />
+</RelativeLayout>

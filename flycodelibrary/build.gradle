@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+// api 相当于以前gradle里的compile，只要libModule已通过compile或api引入库，依赖此libModule的Module无需再引入相同的库
+// 如果api换为implementation，那么依赖此libModule的Module还需要再次引入相同的库
+// 如果还需要添加依赖，可以在version.gradle里找找，一般都有，然后像下面类似的格式添加
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //support
+    api deps.support.app_compat
+    api deps.support.recyclerview
+    api deps.support.cardview
+    api deps.support.design
+    api deps.support.v4
+    api deps.support.core_utils
+    api deps.support.constraint_layout
+    api 'io.reactivex.rxjava2:rxjava:2.1.17'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    // okGo
+    api deps.okgo
+    // gson
+    api deps.gson
+    // eventBus
+    api deps.event_bus
+
+    // test库依赖
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    implementation 'com.google.guava:guava:28.0-android'
+}
+
+task deleteOldJar(type: Delete) {
+    delete 'release/flycodesdk.jar'
+}
+
+task exportJar(type: Copy) {
+    from('build/intermediates/bundles/release/')
+    into('release/')
+    include('classes.jar')
+    rename('classes.jar', 'flycodesdk.jar')
+}
+
+exportJar.dependsOn(deleteOldJar, build)

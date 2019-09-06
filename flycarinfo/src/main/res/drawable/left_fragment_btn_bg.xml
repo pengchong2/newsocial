@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/left_fragment_btn_bg_on"
+        android:state_pressed="true" /><!-- focused state -->
+    <item android:drawable="@drawable/left_fragment_btn_bg_up"
+        android:state_focused="true"/>
+    <item android:drawable="@drawable/left_fragment_btn_bg_up"/>
+</selector>

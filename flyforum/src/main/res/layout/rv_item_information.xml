@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--资讯内容-->
+    <include layout="@layout/recommendlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="165dp">
+        <TextView
+            android:id="@+id/information_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/information_picture"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <!--&lt;!&ndash;详情图片&ndash;&gt;-->
+        <ImageView
+            android:id="@+id/information_picture"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="@dimen/px_30px"
+            android:scaleType="fitXY" />
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/information_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/information_picture"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
+
+        <!--点赞-->
+        <TextView
+            android:id="@+id/information_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_40px"
+            android:layout_marginRight="@dimen/dp_10"
+            android:drawableLeft="@mipmap/eyes"
+            android:drawablePadding="@dimen/dp_7px"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="26px"
+            android:visibility="visible" />
+
+        <!--评论-->
+        <TextView
+            android:id="@+id/information_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_28"
+            android:layout_toLeftOf="@id/information_read"
+            android:drawableLeft="@mipmap/moment_msg"
+            android:drawablePadding="@dimen/px_7"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="26px"
+            android:visibility="visible" />
+
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/flyforum_line" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#9d0125</color>
+    <color name="colorBlue">#00fff6</color>
+    <color name="acs_tagcolor">#06F3EB</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_line">#e3e3e3</color>
+    <color name="color_incommentbg">#d0d0d0</color>
+    <color name="comment_bluename">#06F3EB</color>
+    <color name="colorrg">#1f2e43</color>
+    <color name="btncolorable">#05657A</color>
+    <color name="btncolordisable">#324760</color>
+    <color name="colordetail">#324760</color>
+    <color name="colorcommmet">#28394d</color>
+    <color name="colorcommmetimg">#4a7186</color>
+</resources>

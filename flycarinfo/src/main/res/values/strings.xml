@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LeftFragment</string>
+    <!--车灯页面数据源 key代表序号，values具体数据 onClick根据key来-->
+    <string name="car_light_list_item_key">0,1,2,3,4,5</string>
+    <string name="car_light_list_item_values">前雾灯,后雾灯,日间行车灯,双闪灯,倒车灯,刹车灯</string>
+</resources>

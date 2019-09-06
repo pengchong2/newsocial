@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorrg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/recommendlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:background="@color/colorrg"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_height="179dp">
+        <!--头像-->
+        <ImageView
+            android:id="@+id/moment_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:src="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/moment_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_31"
+            android:layout_marginTop="31dp"
+            android:layout_toRightOf="@+id/moment_avatar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+        <!--图像-->
+        <ImageView
+            android:id="@+id/moment_cover"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY" />
+
+        <!--内容-->
+        <TextView
+            android:id="@+id/moment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moment_avatar"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/moment_cover"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+        <!--发表时间-->
+        <TextView
+            android:id="@+id/moment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
+
+        <!--点赞-->
+        <TextView
+            android:id="@+id/moment_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/moment_zan"
+            android:drawablePadding="@dimen/dp_7px"
+            android:text="0"
+            android:layout_toLeftOf="@+id/moment_cover"
+            android:textColor="@color/colorWhite"
+            android:textSize="26px"
+            android:visibility="visible" />
+
+        <!--评论-->
+        <TextView
+            android:id="@+id/moment_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="@dimen/px_45"
+            android:layout_toLeftOf="@id/moment_zan"
+            android:drawableLeft="@mipmap/moment_msg"
+            android:drawablePadding="@dimen/dp_7px"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="26px"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/flyforum_line" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

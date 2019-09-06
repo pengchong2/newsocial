@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="52px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/left_fragment_color_bg"
+    tools:context=".LeftFragment">
+    
+    <RadioGroup
+        android:id="@+id/left_fragment_rg"
+        android:background="@color/left_fragment_color_bg"
+        android:orientation="horizontal"
+        android:layout_marginStart="10px"
+        android:layout_marginEnd="10px"
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+        
+        <RadioButton
+            android:id="@+id/left_fragment_rb1"
+            android:text="车锁"
+            style="@style/radiobutton_style" />
+        <RadioButton
+            android:id="@+id/left_fragment_rb2"
+            android:text="车灯"
+            style="@style/radiobutton_style" />
+        <!--<RadioButton
+            android:text="通用"
+            style="@style/radiobutton_style" />
+        <RadioButton
+            android:text="系统"
+            style="@style/radiobutton_style" />-->
+    </RadioGroup>
+
+    <View
+        android:background="#4DFFFFFF"
+        android:layout_marginTop="86px"
+        android:layout_marginStart="10px"
+        android:layout_marginEnd="10px"
+        android:layout_width="1060px"
+        android:layout_height="4px"/>
+
+    <cn.flyaudio.leftfragment.view.NoScrollViewPage
+        android:id="@+id/vp"
+        android:layout_marginTop="90px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</FrameLayout>

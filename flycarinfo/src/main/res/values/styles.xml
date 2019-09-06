@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="radiobutton_style">
+        <item name="android:background">@drawable/radio_group_selector</item>
+        <item name="android:textColor">@drawable/color_radiobutton</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginTop">10px</item>
+        <item name="android:layout_width">160px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">28px</item>
+    </style>
+
+    <style name="left_fragment_text_style">
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="left_fragment_switch_style">
+        <item name="android:thumb">@null</item>
+        <item name="android:textColor">@drawable/checkbox_text_color_bg</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:paddingBottom">5px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/checkbox_select_bg</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:layout_width">193px</item>
+        <item name="android:layout_height">87px</item>
+    </style>
+
+    <style name="left_fragment_button_style">
+        <item name="android:textColor">@drawable/left_fragment_button_select_text_bg</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:paddingBottom">5px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/left_fragment_button_select_bg</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:layout_width">193px</item>
+        <item name="android:layout_height">87px</item>
+    </style>
+
+</resources>

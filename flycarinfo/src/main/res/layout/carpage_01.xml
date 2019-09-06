@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/car_yg_tv"
+        style="@style/left_fragment_text_style"
+        android:layout_marginStart="41px"
+        android:layout_marginTop="88px"
+        android:text="前雨刮间歇档" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout_view1"
+        android:layout_width="770px"
+        android:layout_height="87px"
+        android:layout_marginStart="48px"
+        android:layout_marginTop="133px"
+        android:background="@drawable/commonyablayout_view2_bg"
+        android:elevation="2dp"
+        android:paddingBottom="8px"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="#E5512F"
+        tl:tl_indicator_height="74px"
+        tl:tl_indicator_margin_bottom="8px"
+        tl:tl_indicator_margin_left="8px"
+        tl:tl_indicator_margin_right="8px"
+        tl:tl_indicator_margin_top="2px"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textsize="24px" />
+
+    <!--<View
+        android:id="@+id/commonTabLayout_view1_noclick"
+        android:background="#0AFFFFFF"
+        android:layout_marginStart="48px"
+        android:layout_marginTop="133px"
+        android:layout_width="770px"
+        android:layout_height="87px"/>-->
+
+    <cn.flyaudio.leftfragment.view.MySwitch
+        android:id="@+id/left_fragment_yg_switch"
+        android:layout_width="193px"
+        android:layout_height="87px"
+        android:layout_marginStart="839px"
+        android:layout_marginTop="133px"
+        android:background="@drawable/checkbox_select_bg"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingBottom="5px"
+        android:text="前雨刮关闭"
+        android:textColor="#FFFFFF"
+        android:textSize="24px"
+        android:thumb="@null" />
+
+    <TextView
+        style="@style/left_fragment_text_style"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="310px"
+        android:text="左后视镜控制" />
+
+    <TextView
+        android:id="@+id/car_hsj_tv0"
+        style="@style/left_fragment_text_style"
+        android:layout_marginStart="269px"
+        android:layout_marginTop="310px"
+        android:text="左后视镜角度调整" />
+
+    <include
+        android:id="@+id/left_01"
+        layout="@layout/left_fragment_hsj_view"
+        android:layout_width="176px"
+        android:layout_height="176px"
+        android:layout_marginStart="294px"
+        android:layout_marginTop="368px" />
+
+    <TextView
+        android:id="@+id/car_hsj_tv"
+        style="@style/left_fragment_text_style"
+        android:layout_marginStart="600px"
+        android:layout_marginTop="310px"
+        android:text="右后视镜角度调整" />
+
+    <TextView
+        style="@style/left_fragment_text_style"
+        android:layout_marginStart="862px"
+        android:layout_marginTop="310px"
+        android:text="右后视镜控制" />
+
+    <Button
+        android:id="@+id/car_hsj_l_close"
+        style="@style/left_fragment_button_style"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="367px"
+        android:text="左后视镜折叠" />
+
+    <Button
+        android:id="@+id/car_hsj_l_open"
+        style="@style/left_fragment_button_style"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="461px"
+        android:enabled="false"
+        android:text="左后视镜展开" />
+    <!--  <Button
+          android:visibility="gone"
+          android:id="@+id/cardoor_hbx_open"
+          android:text="尾门打开"
+          android:layout_marginTop="367px"
+          android:layout_marginStart="280px"
+          style="@style/left_fragment_button_style" />
+      <Button
+          android:visibility="gone"
+          android:id="@+id/cardoor_hbx_close"
+          android:enabled="false"
+          android:text="尾门关闭"
+          android:layout_marginTop="461px"
+          android:layout_marginStart="280px"
+          style="@style/left_fragment_button_style" />-->
+
+    <Button
+        android:id="@+id/car_hsj_r_close"
+        style="@style/left_fragment_button_style"
+        android:layout_marginStart="835px"
+        android:layout_marginTop="365px"
+        android:enabled="false"
+        android:text="右后视镜折叠" />
+
+    <Button
+        android:id="@+id/car_hsj_r_open"
+        style="@style/left_fragment_button_style"
+        android:layout_marginStart="835px"
+        android:layout_marginTop="461px"
+        android:text="右后视镜展开" />
+
+    <!--android:src="@drawable/left_fragment_hsj_bg"-->
+    <include
+        android:id="@+id/right_01"
+        layout="@layout/left_fragment_hsj_view"
+        android:layout_width="176px"
+        android:layout_height="176px"
+        android:layout_marginStart="611px"
+        android:layout_marginTop="368px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="628px"
+        android:layout_marginEnd="40px"
+        android:background="#425269" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout_view6"
+        android:layout_width="384px"
+        android:layout_height="87px"
+        android:layout_marginStart="344px"
+        android:layout_marginTop="685px"
+        android:background="@drawable/commonyablayout_view4_bg"
+        android:paddingBottom="8px"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="#E5512F"
+        tl:tl_indicator_height="74px"
+        tl:tl_indicator_margin_bottom="8px"
+        tl:tl_indicator_margin_left="8px"
+        tl:tl_indicator_margin_right="8px"
+        tl:tl_indicator_margin_top="2px"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textsize="24px" />
+
+    <FrameLayout
+        android:id="@+id/cardoor"
+        android:layout_width="match_parent"
+        android:layout_height="740px"
+        android:layout_marginTop="816px"
+        android:background="@drawable/cardoor_bg">
+
+        <Button
+            android:id="@+id/cardoor_lf_o"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="61px"
+            android:text="左前门打开" />
+
+        <Button
+            android:id="@+id/cardoor_lf_f"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="155px"
+            android:text="左前门锁住" />
+
+        <Button
+            android:id="@+id/cardoor_lb_o"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="397px"
+            android:text="左后门打开" />
+
+        <Button
+            android:id="@+id/cardoor_lb_f"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="491px"
+            android:text="左后门锁住" />
+
+        <Button
+            android:id="@+id/cardoor_rf_o"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="61px"
+            android:text="右前门打开" />
+
+        <Button
+            android:id="@+id/cardoor_rf_f"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="155px"
+            android:text="右前门锁住" />
+
+        <Button
+            android:id="@+id/cardoor_rb_o"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="397px"
+            android:text="右后门打开" />
+
+        <Button
+            android:id="@+id/cardoor_rb_f"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="491px"
+            android:text="右后门锁住" />
+
+        <cn.flyaudio.leftfragment.view.MySwitch
+            android:id="@+id/cardoor_clock"
+            android:layout_width="193px"
+            android:layout_height="87px"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="634px"
+            android:background="@drawable/checkbox_select_bg"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingBottom="5px"
+            android:text="四车门全锁"
+            android:textColor="#FFFFFF"
+            android:textSize="24px"
+            android:thumb="@null" />
+
+        <cn.flyaudio.leftfragment.view.MySwitch
+            android:id="@+id/carhbx_state"
+            android:layout_width="193px"
+            android:layout_height="87px"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="634px"
+            android:background="@drawable/checkbox_select_bg"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingBottom="5px"
+            android:text="尾门打开"
+            android:textColor="#FFFFFF"
+            android:textSize="24px"
+            android:thumb="@null" />
+
+        <Button
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="634px"
+            android:text="四车门全锁"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="634px"
+            android:text="尾门打开"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/carwindow"
+        android:layout_width="match_parent"
+        android:layout_height="740px"
+        android:layout_marginTop="816px"
+        android:background="@drawable/carwindow_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70px"
+            android:layout_marginTop="11px"
+            android:text="四车窗开启缝隙，便于通风"
+            android:textColor="#828892"
+            android:textSize="24px" />
+
+        <Button
+            android:id="@+id/car_tf_front_l"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="61px"
+            android:text="通风" />
+
+        <Button
+            android:id="@+id/car_window_front_l1"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="155px"
+            android:text="左前窗全开" />
+
+        <Button
+            android:id="@+id/car_window_front_l2"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="248px"
+            android:enabled="false"
+            android:text="左前窗全关" />
+
+        <Button
+            android:id="@+id/car_tf_back_l"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="437px"
+            android:text="通风" />
+
+        <Button
+            android:id="@+id/car_window_back_l1"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="531px"
+            android:text="左后窗全开" />
+
+        <Button
+            android:id="@+id/car_window_back_l2"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="624px"
+            android:enabled="false"
+            android:text="左后窗全关" />
+
+        <Button
+            android:id="@+id/car_tf_front_r"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="61px"
+            android:text="通风" />
+
+        <Button
+            android:id="@+id/car_window_front_r1"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="155px"
+            android:text="右前窗全开" />
+
+        <Button
+            android:id="@+id/car_window_front_r2"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="248px"
+            android:enabled="false"
+            android:text="右前窗全关" />
+
+        <Button
+            android:id="@+id/car_tf_back_r"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="437px"
+            android:text="通风" />
+
+        <Button
+            android:id="@+id/car_window_back_r1"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="531px"
+            android:text="右后窗全开" />
+
+        <Button
+            android:id="@+id/car_window_back_r2"
+            style="@style/left_fragment_button_style"
+            android:layout_marginStart="840px"
+            android:layout_marginTop="624px"
+            android:enabled="false"
+            android:text="右后窗全关" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_sendname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/comment_bluename"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="回复"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_recname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/comment_bluename"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

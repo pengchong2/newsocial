@@ -1,0 +1,47 @@
+<resources>
+
+  <!--  <string name="app_name">FlySocialContact</string> -->
+    <string name="btn_appointment">点我预约</string>
+    <string name="moment">此刻</string>
+    <string name="momentdetail">此刻详情</string>
+    <string name="acstatus_nostart">未开始</string>
+    <string name="acstatus_end">已结束</string>
+    <string name="acstatus_doing">进行中</string>
+
+  <string name="activity_nostart">活动报名还未开始</string>
+  <string name="activity_end">活动报名已结束</string>
+  <string name="activity_doing">立即报名</string>
+
+    <string name="imformation">资讯</string>
+    <string name="more">更多</string>
+    <string name="moment_recommend">此刻推荐</string>
+    <string name="moment_recommend_tips">此刻你最应该看的</string>
+    <string name="imformation_recommend">资讯推荐</string>
+    <string name="imformation_recommend_tips">汽车最近推荐指南，让你的汽车健步如飞</string>
+    <string name="activity_recommend">活动推荐</string>
+    <string name="activity_recommend_tips">全方位生活指南，每天都有新的乐趣</string>
+    <string name="infodetail">资讯详情</string>
+    <string name="zxing_tips">请使用手机app扫描二维码报名</string>
+    <string name="acsdetail">资讯详情</string>
+    <string name="infocomment">资  讯  评  论 </string>
+    <string name="nocomment">当前还没有人来评论</string>
+    <string name="moment_comment">此  刻  评  论</string>
+    <string name="moment_comment_en">c   o   m   m   e   n   t</string>
+    <string name="infocomment_en">comment</string>
+    <string name="errortips">网络异常，请检查网络...</string>
+    <string name="wait_a_minute">正在加载,请稍后...</string>
+    <string name="applynum">已报名人数：</string>
+    <string name="time">时间</string>
+    <string name="activitystatus">活动状态</string>
+    <string name="Signup_immediately">立即报名</string>
+    <string name="place">地点</string>
+    <string name="signup_num">已报名人数</string>
+    <string name="recommend">推荐</string>
+    <item name="image_key" type="id"></item>
+
+    <string name="recommend_tv">推荐</string>
+    <string name="campaign_tv">活动</string>
+    <string name="information_tv">资讯</string>
+    <string name="moment_tv">此刻</string>
+
+</resources>

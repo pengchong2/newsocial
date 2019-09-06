@@ -1,0 +1,7 @@
+<resources>
+    <string name="brvah_loading">Loading...</string>
+    <string name="brvah_load_failed">load more failed</string>
+    <string name="brvah_load_end">No more data</string>
+    <string name="default_loading">loading...</string>
+    <string name="wait_a_minute">正在加载,请稍后...</string>
+</resources>

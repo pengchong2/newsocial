@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/left_fragment_list_item_bg"
+        android:layout_marginTop="4px"
+        android:layout_marginBottom="4px"
+        android:layout_marginStart="30px"
+        android:layout_marginEnd="30px"
+        android:layout_width="1020px"
+        android:layout_height="128px">
+
+    <TextView
+        android:id="@+id/left_fragment_list_item_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="31px"
+        style="@style/left_fragment_text_style"
+        />
+
+    <cn.flyaudio.leftfragment.view.MySwitch
+        android:elevation="4dp"
+        android:id="@+id/left_fragment_list_item_sw"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="912px"
+        android:thumb="@drawable/switch_ios_thumb"
+        android:track="@drawable/switch_ios_track_selector" />
+
+    </RelativeLayout>
+
+</FrameLayout>

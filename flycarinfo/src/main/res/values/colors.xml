@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--black-->
+    <color name="black_1D2023">#1C1F22</color>
+    <color name="black_0F1113">#111315</color>
+    <!--gray-->
+    <color name="gray_33000000">#33000000</color>
+    <!--blue-->
+    <color name="blue_4C8FFF">#4C8FFF</color>
+    <!--red-->
+    <color name="red_FF6565">#FF6565</color>
+    <color name="red_E5512F">#E5512F</color>
+    <!--green-->
+    <color name="green_0CDF4B">#0CDF4B </color>
+    <color name="color_text_selected">#000000</color>
+    <color name="color_text_normal">#FFFFFF</color>
+    <color name="color_bg_normal">#26292C</color>
+    <color name="color_bg_selected">#A9AFB3</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="left_fragment_color_bg">#1f2e43</color>
+    <color name="left_fragment_ffffff">#FFFFFF</color>
+
+    <color name="left_fragment_94989F">#94989F</color>
+    <color name="left_fragment_485e7f">#485e7f</color>
+    <color name="left_fragment_E5512F">#E5512F</color>
+</resources>

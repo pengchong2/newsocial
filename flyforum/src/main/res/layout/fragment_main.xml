@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/flyforum_bg_new"
+    tools:context=".MainActivity"
+    >
+
+
+
+    <RadioGroup
+        android:id="@+id/fragemntrg"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="62px">
+        <RadioButton
+            android:id="@+id/recommendrb"
+            android:tag="recommend"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:text="@string/recommend_tv"
+            style="@style/textstyle"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/fragmentrgbg"
+            />
+        <RadioButton
+            android:id="@+id/campaignrb"
+            android:tag="campaign"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:text="@string/campaign_tv"
+            style="@style/textstyle"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/fragmentrgbg" />
+        <RadioButton
+            android:id="@+id/informationrb"
+            android:tag="information"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:text="@string/information_tv"
+            style="@style/textstyle"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/fragmentrgbg" />
+        <RadioButton
+            android:id="@+id/momentrb"
+            android:tag="moment"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:text="@string/moment_tv"
+            style="@style/textstyle"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/fragmentrgbg" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@drawable/linebg">
+
+    </View>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/fragmentRecommendlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragmentCampaignlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragmentInformationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragmentMomentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
